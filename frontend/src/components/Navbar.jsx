@@ -43,6 +43,12 @@ const Navbar = () => {
           <li className="py-1">CONTACT</li>
           <hr className="border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden" />
         </NavLink>
+        <NavLink
+          to="/login-admin"
+          className="border px-2.5 py-0.5 cursor-pointer rounded-full border-gray-500 text-gray-600"
+        >
+          Admin
+        </NavLink>
       </ul>
       <div className="flex items-center gap-4">
         {token && userData ? (
@@ -63,6 +69,7 @@ const Navbar = () => {
                 >
                   My Appointments
                 </p>
+
                 <p onClick={logout} className="cursor-pointer hover:text-black">
                   Logout
                 </p>

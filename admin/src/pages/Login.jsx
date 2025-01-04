@@ -18,10 +18,13 @@ const Login = () => {
 
     try {
       if (state === "Admin") {
-        const { data } = await axios.post(backendUrl + "/api/admin/login", {
-          email,
-          password,
-        });
+        const { data } = await axios.post(
+          backendUrl + "/api/admin/login-admin",
+          {
+            email,
+            password,
+          }
+        );
         if (data.success) {
           localStorage.setItem("aToken", data.token);
           setAToken(data.token);
