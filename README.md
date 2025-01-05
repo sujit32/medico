@@ -1,0 +1,1 @@
+The Doctor Appointment System, Medico, is a user-friendly web application built using the MERN stack (MongoDB, Express.js, React.js, and Node.js). It allows patients to seamlessly search for doctors by specialization, location, or availability, and conveniently book, reschedule, or cancel appointments in real-time.
